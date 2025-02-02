@@ -1,0 +1,48 @@
+<html lang="en">
+<head> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Three Types of CSS Example</title>
+
+/*External CSS*/
+.external-style{
+color: blue;
+font-size: 18px;
+background-color: #0088ff;
+padding: 10px;
+border: 2px solid #008acc;
+border-radius: 5px;
+text-align: center;
+}
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+/*Internal CSS */
+body {
+font-family: Arial, Times New Roman;
+background-color: #ff0088;
+margin:0;
+padding:0;
+}
+.container{
+width:80%;
+margin:20 px auto;
+padding:20 px;
+background-color: #ff08ff;
+}
+h1{
+color: #ff3300;
+text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1> 3 Types of CSS applied </h1>
+<p style="color: green; font-weight: bold;">This paragraph uses Inline CSS</p> /*Inline CSS*/
+<p class="external-style">This paragraph is style with External CSS.</p>
+<p> This paragraph uses Internal CSS for the container and text styles.</p>
+</div>
+</body>
+</html>
